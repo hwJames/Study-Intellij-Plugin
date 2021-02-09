@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.github.hwjames.Study-Intellij-Plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Study-Intellij-Plugin</name>
+    <vendor email="hwjameshw@gmail.com" url="https://github.com/hwJames">hwJames</vendor>
 
     <description><![CDATA[
     Enter short description for your plugin here.<br>
@@ -17,6 +17,15 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="TestPlugin.TopMenu"
+               text="TestPlugin"
+               description="TestPlugin">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="com.github.hwjames.study_intellij_plugin.action.TestAction"
+                    class="com.github.hwjames.study_intellij_plugin.action.TestAction"
+                    text="TestAction"
+                    description="테스트 액션입니다">
+            </action>
+        </group>
     </actions>
 </idea-plugin>
