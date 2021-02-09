@@ -21,8 +21,8 @@
                text="TestPlugin"
                description="TestPlugin">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="com.github.hwjames.study_intellij_plugin.action.TestAction"
-                    class="com.github.hwjames.study_intellij_plugin.action.TestAction"
+            <action id="action.TestAction"
+                    class="action.TestAction"
                     text="TestAction"
                     description="테스트 액션입니다">
             </action>

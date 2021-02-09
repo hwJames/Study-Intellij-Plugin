@@ -1,6 +1,6 @@
-package com.github.hwjames.study_intellij_plugin.action
+package action
 
-import com.github.hwjames.study_intellij_plugin.dialog.TestDialogWrapper
+import dialog.TestDialogWrapper
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 

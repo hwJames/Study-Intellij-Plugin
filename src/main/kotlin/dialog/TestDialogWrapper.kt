@@ -1,4 +1,4 @@
-package com.github.hwjames.study_intellij_plugin.dialog
+package dialog
 
 import com.intellij.openapi.ui.DialogWrapper
 import java.awt.BorderLayout
