@@ -7,7 +7,7 @@ import javax.swing.JComponent
 import javax.swing.JLabel
 import javax.swing.JPanel
 
-class TestDialogWrapper() : DialogWrapper(true) {
+class TestDialogWrapper : DialogWrapper(true) {
 
     init {
         init()
@@ -22,5 +22,13 @@ class TestDialogWrapper() : DialogWrapper(true) {
         dialogPanel.add(label, BorderLayout.CENTER)
 
         return dialogPanel
+    }
+
+    override fun createDefaultActions() {
+        super.createDefaultActions()
+//        확인 버튼
+//        myOKAction = null
+//        취소 버튼
+        myCancelAction = null
     }
 }
