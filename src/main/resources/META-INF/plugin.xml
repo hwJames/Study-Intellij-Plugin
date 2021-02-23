@@ -1,11 +1,13 @@
 <idea-plugin>
     <id>com.github.hwjames.Study-Intellij-Plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>StudyIntellijPlugin</name>
+    <vendor email="hwjameshw@gmail.com" url="https://github.com/hwJames">hwJames</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    StudyIntellijPlugin
+
+    Android Studio Plugin 제작을 위한 프로젝트입니다.
+    여러가지 UI를 구현하고 기능을 만들어 볼 생각입니다.
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -17,6 +19,15 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="StudyIntellijPlugin.TopMenu"
+               text="StudyIntellijPlugin"
+               description="StudyIntellijPlugin menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="action.TestDialogAction"
+                    class="action.TestDialogAction"
+                    text="TestDialog"
+                    description="테스트 액션입니다">
+            </action>
+        </group>
     </actions>
 </idea-plugin>
