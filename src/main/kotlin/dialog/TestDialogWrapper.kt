@@ -14,7 +14,7 @@ class TestDialogWrapper() : DialogWrapper(true) {
         title = "TestDialogWrapper"
     }
 
-    override fun createCenterPanel(): JComponent? {
+    override fun createCenterPanel(): JComponent {
         val dialogPanel = JPanel(BorderLayout())
 
         val label = JLabel("test")
