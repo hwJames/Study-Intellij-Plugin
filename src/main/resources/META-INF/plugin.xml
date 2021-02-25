@@ -16,6 +16,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService serviceImplementation="service.LocalDataService"/>
     </extensions>
 
     <actions>
@@ -26,7 +27,17 @@
             <action id="action.TestDialogAction"
                     class="action.TestDialogAction"
                     text="TestDialog"
-                    description="테스트 액션입니다">
+                    description="다이어로그 입니다.">
+            </action>
+            <action id="action.TestFieldDialogAction"
+                    class="action.TestFieldDialogAction"
+                    text="TestFieldDialog"
+                    description="필드 다이어로그입니다.">
+            </action>
+            <action id="action.TestNotifierAction"
+                    class="action.TestNotifierAction"
+                    text="TestNotifier"
+                    description="알림 입니다.">
             </action>
         </group>
     </actions>
