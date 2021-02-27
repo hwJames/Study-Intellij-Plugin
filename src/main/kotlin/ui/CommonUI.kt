@@ -1,14 +1,16 @@
 package ui
 
 import com.intellij.ui.layout.panel
+import javax.swing.JPanel
 
 class CommonUI {
     companion object {
-        var TestUI =
-            panel {
-                row {
+        fun  testPanel() : JPanel {
+            return panel() {
+                row("Hello") {
                     label("Test")
                 }
             }
+        }
     }
 }
